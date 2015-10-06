@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EagleEye</string>
+    <string name="title_activity_take_picture">TakePicture</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_found_building">FoundBuilding</string>
+    <string name="title_activity_no_match">NoMatch</string>
+</resources>
