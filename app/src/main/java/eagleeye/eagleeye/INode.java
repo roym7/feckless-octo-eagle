@@ -5,24 +5,28 @@ package eagleeye.eagleeye;
  */
 public class INode {
 
-    private INode a;
     private Image image;
     private String name;
     private INode next;
 
-    public void INode(String name){
-
+    public void INode(String n, Image i){
+        name = n;
+        image = i;
     }
 
-    public void addNext(INode a){
-
+    public void setNext(INode a){
+        next = a;
     }
 
     public Image getImage(){
-        return null;
+        return this.image;
     }
 
     public String getName(){
-        return "";
+        return this.name;
+    }
+
+    public INode getNext(){
+        return this.next;
     }
 }
