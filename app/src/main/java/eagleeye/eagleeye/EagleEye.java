@@ -5,6 +5,8 @@ import android.media.Image;
 /**
  * Created by Mike R on 10/6/2015.
  */
+
+//This is a test
 public class EagleEye {
 
     private String buildingName;
