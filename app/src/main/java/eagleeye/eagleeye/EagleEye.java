@@ -1,23 +1,31 @@
 package eagleeye.eagleeye;
 
+import android.media.Image;
+
 /**
  * Created by Mike R on 10/6/2015.
  */
 public class EagleEye {
 
-    private string buildingName;
+    private String buildingName;
     private Image pic;
     private TakePicture screen1;
-    private Foundbuilding screen2;
+    private FoundBuilding screen2;
     private NoMatch screen3;
 
+    public void main(String[] args){
+
+        screen1.setVisible(true);
+        screen2.setVisible(false);
+        screen3.setVisible(false);
+
+    }
 
     public boolean isMatch(){
         return false;
     }
 
-
-    public void openFoundBuildingOnMatch(string buildingName){
+    public void openFoundBuildingOnMatch(String buildingName){
 
     }
 
