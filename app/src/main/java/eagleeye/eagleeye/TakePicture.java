@@ -16,7 +16,7 @@ public class TakePicture extends AppCompatActivity {
     }
 
     public void takePic(String targetFileName){
-
+        // Ian - just making a change to commit
     }
 
 
