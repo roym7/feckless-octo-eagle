@@ -9,4 +9,13 @@
     <TextView android:text="Hey Look!!!  I acutally run!" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Photo!"
+        android:id="@+id/pictureButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onTakePicPressed" />
+
 </RelativeLayout>

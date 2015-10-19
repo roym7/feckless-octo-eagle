@@ -1,25 +1,43 @@
 package eagleeye.eagleeye;
 
+import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import java.io.File;
 
 public class TakePicture extends AppCompatActivity {
 
+    private static final int CAMERA = 1;
     public Uri locationToPhotos;
-    public String targetFileName;
+    public String targetFileName = "building.jpg";
 
     public void cancel(){
 
     }
 
-    public void takePic(String targetFileName){
-        // Ian - just making a change to commit
+    public void onTakePicPressed(View v) {
+
+        Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        File targetFile = new File(getExternalFilesDir(null), targetFileName);
+        locationToPhotos = Uri.fromFile(targetFile);
+        cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, locationToPhotos);
+        startActivityForResult(cameraIntent, CAMERA);
+
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
+
+
+    }
 
 
 
