@@ -4,13 +4,14 @@ import android.media.Image;
 
 /**
  * Created by Mike R on 10/6/2015.
+ * Edited by Robert W on mulitiple dates.
  */
+
+import android.net.Uri;
 
 //This is a test
 public class EagleEye {
 
-    private String buildingName;
-    private Image pic;
     private TakePicture screen1;
     private FoundBuilding screen2;
     private NoMatch screen3;
@@ -23,8 +24,24 @@ public class EagleEye {
 
     }
 
-    public boolean isMatch(){
-        return false;
+    public void isMatch(boolean match, String buildingName, Uri buildingPicture){
+    
+    	if (match=true){
+    		
+    		Bundle matchInformation = new Bundle();    		
+    		Intent startFoundBuilding = new Intent();
+    		
+    		matchInformation.putString(buildingName, buildingName);
+    		startFoundBuilding.setData(buildingPicture);
+    		
+    		startActivityForResult(startFoundBuilding, 0);
+    		
+    	} else {
+    		
+    	}
+    		
+    	
+    	
     }
 
     public void openFoundBuildingOnMatch(String buildingName){
@@ -35,15 +52,15 @@ public class EagleEye {
 
     }
 
-    public void openTakePictureOnStart(){
-
-    }
-
     public String retrieveNextReferencePictureAndName(){
         return "";
     }
 
-    public void sendPicturesToBlackBox(Image pic){
+    public void sendPicturesToBlackBox(Uri buildingPicture){
+    	
+    	Uri comparisonPicture = new Uri();
+    			
+    	thirdPartySoftware.beginComparisonMethod(buildingPicture, comparisonPicture);
 
     }
 }
