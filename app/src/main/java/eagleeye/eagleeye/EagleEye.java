@@ -16,32 +16,30 @@ public class EagleEye {
     private FoundBuilding screen2;
     private NoMatch screen3;
 
-    public void main(String[] args){
-
-        screen1.setVisible(true);
-        screen2.setVisible(false);
-        screen3.setVisible(false);
-
-    }
-
     public void isMatch(boolean match, String buildingName, Uri buildingPicture){
     
     	if (match=true){
     		
     		Bundle matchInformation = new Bundle();    		
-    		Intent startFoundBuilding = new Intent();
+    		Intent startFoundBuilding = new Intent(this, FoundBuilding.class);
     		
     		matchInformation.putString(buildingName, buildingName);
+    		startFoundBuilding.putExtras(matchInformation);
     		startFoundBuilding.setData(buildingPicture);
     		
     		startActivityForResult(startFoundBuilding, 0);
     		
     	} else {
     		
-    	}
+    		Bundle noMatchInformation = new Bundle();    		
+    		Intent startNoMatch = new Intent(this, NoMatch.class);
     		
-    	
-    	
+    		startNoMatch.setData(buildingPicture);
+    		
+    		startActivityForResult(startNoMatch, 0);
+    		    		
+    	}
+    		   	
     }
 
     public void openFoundBuildingOnMatch(String buildingName){
