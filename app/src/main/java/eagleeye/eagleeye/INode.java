@@ -1,5 +1,7 @@
 package eagleeye.eagleeye;
 
+import android.media.Image;
+
 /**
  * Created by Mike R on 10/6/2015.
  * Edited by James Combs on 10/17/2015.
