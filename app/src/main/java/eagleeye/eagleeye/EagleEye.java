@@ -1,5 +1,6 @@
 package eagleeye.eagleeye;
 
+import android.content.Intent;
 import android.media.Image;
 
 /**
@@ -8,6 +9,7 @@ import android.media.Image;
  */
 
 import android.net.Uri;
+import android.os.Bundle;
 
 //This is a test
 public class EagleEye {
@@ -20,7 +22,7 @@ public class EagleEye {
     
     	if (match=true){
     		
-    		Bundle matchInformation = new Bundle();    		
+    		Bundle matchInformation = new Bundle();
     		Intent startFoundBuilding = new Intent(this, FoundBuilding.class);
     		
     		matchInformation.putString(buildingName, buildingName);
