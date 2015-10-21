@@ -3,11 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/EagleEye.iml" filepath="$PROJECT_DIR$/EagleEye.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
 =======
       <module fileurl="file://$PROJECT_DIR$/EagleEye2.iml" filepath="$PROJECT_DIR$/EagleEye2.iml" />
 >>>>>>> 67cb055a37a95259b976cb1a6f6b5216a6582d42
+=======
+      <module fileurl="file://$PROJECT_DIR$/feckless-octo-eagle.iml" filepath="$PROJECT_DIR$/feckless-octo-eagle.iml" />
+>>>>>>> 8c251fb1ff4e7c29d823050530a640743cda5255
     </modules>
   </component>
 </project>
