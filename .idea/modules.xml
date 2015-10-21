@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/EagleEye.iml" filepath="$PROJECT_DIR$/EagleEye.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/EagleEye2.iml" filepath="$PROJECT_DIR$/EagleEye2.iml" />
+>>>>>>> 67cb055a37a95259b976cb1a6f6b5216a6582d42
     </modules>
   </component>
 </project>
